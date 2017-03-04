@@ -14,5 +14,5 @@ docker build --tag android-23 .
 Дальше можно делать что-то такое:
 
 ```shell
-docker run -ti --rm -v /path/to/project:/opt/project --workdir /opt/project android-23 cordova <cmd>
+docker run -ti --rm -v `pwd`:/opt/project --workdir /opt/project android-23 cordova <cmd>
 ```
